@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Actividad HTML</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Página Web</h1>
+        <p>Actividad de Programación Web.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+
+            <h2>Inicio</h2>
+
+            <p>Esta es mi primera página utilizando HTML.</p>
+
+            <p>En esta actividad estoy utilizando etiquetas semánticas, listas, imágenes, tablas y formularios.</p>
+
+            <figure>
+                <img src="ulima.jpg" alt="Universidad de Lima" width="300">
+                <figcaption>Universidad de Lima</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="tabla">
+
+            <h2>Horario del ciclo</h2>
+
+            <table>
+
+                <caption>Horario de clases</caption>
+
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Día</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Programación Web</td>
+                        <td>Sábado</td>
+                        <td>7:00 - 10:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Base de Datos</td>
+                        <td>Lunes</td>
+                        <td>11:00 - 1:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>EDA II</td>
+                        <td>Martes</td>
+                        <td>7:00 - 10:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Simulacion</td>
+                        <td>Miercoles</td>
+                        <td>7:00 - 9:00</td>
+                    </tr>    
+
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section id="formulario">
+
+            <h2>Formulario de Inscripción</h2>
+
+            <form>
+
+                <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label> <input type="email" id="correo" name="correo" required>
+                <br><br>
+
+                <label for="codigo">Código:</label> <input type="text" id="codigo" name="codigo" required>
+                <br><br>
+
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="sistemas">Ingeniería de Sistemas</option>
+                    <option value="industrial">Ingeniería Industrial</option>
+                    <option value="civil">Ingeniería Civil</option>
+                </select>
+
+                <br><br>
+
+                Género:
+                <br>
+
+                <label for="g_masculino">Masculino</label> <input type="radio" id="g_masculino" name="genero" value="M" required>
+                <label for="g_femenino">Femenino</label> <input type="radio" id="g_femenino" name="genero" value="F">
+                <label for="g_otro">Otro</label> <input type="radio" id="g_otro" name="genero" value="O">
+
+                <br><br>
+
+                <label for="confirmar">Confirmo que los datos ingresados son correctos</label> <input type="checkbox" id="confirmar" name="confirmar" required>
+                <br><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Programación Web 2026-2</p>
+    </footer>
+
+</body>
+
+</html>
